@@ -16,7 +16,11 @@
     color: rgb(51, 147, 216);
     text-decoration: none;
 }
-
+@media only screen and (max-width: 992px){
+    .icons{
+        display: none;
+    }
+    }
 .image-container {
     position: relative;
 }
@@ -25,6 +29,10 @@
     position: absolute;
     top: 27%;
     left: 48%;
+    background-color: #FFF3CD;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(21, 21, 21, 0.2);
+    padding: 40px;
 }
 
 .image-container img {
@@ -33,12 +41,26 @@
     height: 100vh;
 }
 
-.content-box {
-    background-color: #FFF3CD;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(21, 21, 21, 0.2);
-    padding: 40px;
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+
+    .image-container img {
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+        opacity: 0.5;
+    }
+
+    .content-box {
+        position: absolute;
+        top: 44%;
+        left: 0%;
+        margin: auto;
+        
+    }
+
 }
+
+
 
 .content-box h2 {
     color: #9C6D0D;
@@ -72,6 +94,7 @@ button:hover {
     /* display: inline-block; */
     padding: 20px 12px;
     border-radius: 50% !important;
+    opacity: 0.7;
 }
 
 .badgeoverlay {
@@ -80,10 +103,26 @@ button:hover {
     left: 85%;
 }
 
-.button1 button{
-   border: solid 2px #9C6D0D;
-   color: #9C6D0D;
-   background-color: #FFF;
-   padding: 10px 30px;
-   align-items: center;
+.button1 button {
+    border: solid 2px #9C6D0D;
+    color: #9C6D0D;
+    background-color: #FFF;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.Ourproducts .card:hover {
+    opacity: 0.5;
+}
+
+
+/* Explore Sectionn */
+.mainexploer .container {
+    background: rgba(252, 248, 243, 1);
+}
+
+.button2 button {
+    background-color: #9C6D0D;
+    color: white;
+    padding: 10px 30px;
 }
