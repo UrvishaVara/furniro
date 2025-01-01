@@ -10,7 +10,7 @@
     font-family: Poppins;
 }
 
-/* --headernav-- */
+/* --header-- */
 
 .nav-link:hover {
     color: rgb(51, 147, 216);
@@ -36,7 +36,7 @@
     padding: 40px;
 }
 
-h2 {
+.content-box  h2 {
     color: #9C6D0D;
 }
 
@@ -52,4 +52,7 @@ h2 {
 button:hover {
     background-color: #C68505;
 }
+
+/* --Range-- */
+
 
