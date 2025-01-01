@@ -16,19 +16,23 @@
     color: rgb(51, 147, 216);
     text-decoration: none;
 }
-.headermain{
+
+.image-container {
     position: relative;
 }
-.content-box{
+
+.content-box {
     position: absolute;
-    top:27%;
+    top: 27%;
     left: 48%;
 }
-.image-container img{
+
+.image-container img {
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
+
 .content-box {
     background-color: #FFF3CD;
     border-radius: 10px;
@@ -36,7 +40,7 @@
     padding: 40px;
 }
 
-.content-box  h2 {
+.content-box h2 {
     color: #9C6D0D;
 }
 
@@ -44,9 +48,7 @@
     background-color: rgba(184, 142, 47, 1);
     border: none;
     padding: 15px 30px;
-    /* border-radius: 5px; */
     color: white;
-    
 }
 
 button:hover {
@@ -55,4 +57,33 @@ button:hover {
 
 /* --Range-- */
 
+.range img {
+    border-radius: 10px;
+}
 
+.range img:hover {
+    transition: ease-in-out .3s;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 2px 5px rgb(217, 215, 215);
+}
+
+/* --Our Products-- */
+.round {
+    /* display: inline-block; */
+    padding: 20px 12px;
+    border-radius: 50% !important;
+}
+
+.badgeoverlay {
+    position: absolute;
+    top: 8%;
+    left: 85%;
+}
+
+.button1 button{
+   border: solid 2px #9C6D0D;
+   color: #9C6D0D;
+   background-color: #FFF;
+   padding: 10px 30px;
+   align-items: center;
+}
