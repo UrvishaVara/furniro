@@ -16,11 +16,13 @@
     color: rgb(51, 147, 216);
     text-decoration: none;
 }
-@media only screen and (max-width: 992px){
-    .icons{
+
+@media only screen and (max-width: 992px) {
+    .icons {
         display: none;
     }
-    }
+}
+
 .image-container {
     position: relative;
 }
@@ -55,12 +57,10 @@
         top: 44%;
         left: 0%;
         margin: auto;
-        
+
     }
 
 }
-
-
 
 .content-box h2 {
     color: #9C6D0D;
@@ -112,9 +112,16 @@ button:hover {
 }
 
 .Ourproducts .card:hover {
-    opacity: 0.5;
+    filter: brightness(50%);
 }
 
+.test__cart {
+    display: none;
+}
+
+.test:hover>.test__cart {
+    display: block;
+}
 
 /* Explore Sectionn */
 .mainexploer .container {
@@ -125,4 +132,27 @@ button:hover {
     background-color: #9C6D0D;
     color: white;
     padding: 10px 30px;
+}
+
+.divider {
+    border-top: 1px solid #b2b1b1;
+    margin: 20px 0;
+}
+
+/* --footer-- */
+
+li a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-weight: bold;
+}
+
+.thirdcol input {
+    border:none;
+    border-bottom: 1px solid black;
+} 
+
+li a:hover{
+    color: #3a3939;
 }
