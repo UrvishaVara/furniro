@@ -156,3 +156,14 @@ li a {
 li a:hover{
     color: #3a3939;
 }
+
+/* --shopsection-- */
+
+.headimg{
+    position: relative;
+}
+.shoptext{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
