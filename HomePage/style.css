@@ -164,6 +164,9 @@ li a:hover{
 }
 .shoptext{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 45%;
+}
+.mainsection .card:hover{
+    filter: brightness(50%);
 }
