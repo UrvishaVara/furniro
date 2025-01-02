@@ -183,14 +183,63 @@ li a:hover {
     left: 45%;
 }
 
+/* --shopsection MediaQuery -- */
+
+@media only screen and (max-width: 768px) and (min-width: 200px){
+    .shoptext {
+        /* position: absolute; */
+        top: 12%;
+        left: 40%;
+    }
+}
+
+
 /* --pagination-- */
 
 .page-link{
     border: none;
 }
-
-/* --shoplastfooter-- */
 .lastfooter{
     background: #FAF3EA;
+}
 
+/* --shop MediaQuery-- */
+
+
+@media only screen and (max-width: 768px) and (min-width: 200px) {
+    .mid{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .mid_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img2{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* --cartsection-- */
+
+.cart1 , .cardtotal{
+    background: #F9F1E7;
+}
+
+/* --cartsection MediaQuery-- */
+
+@media only screen and (max-width: 768px) and (min-width: 200px){
+
+    .cart1, .cart2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartmid{
+        flex-direction: column;
+    }
+    
 }
