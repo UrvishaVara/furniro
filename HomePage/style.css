@@ -11,6 +11,9 @@
 }
 
 /* --header-- */
+li{
+margin-top: 10px;
+}
 
 .nav-link:hover {
     color: rgb(51, 147, 216);
@@ -27,14 +30,20 @@
     position: relative;
 }
 
-.content-box {
+.card-containers {
     position: absolute;
+    width: 500px;
+    height: 300px;
     top: 27%;
     left: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #FFF3CD;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(21, 21, 21, 0.2);
     padding: 40px;
+    text-align: left;
 }
 
 .image-container img {
@@ -43,21 +52,45 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 200px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
 
-    .image-container img {
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        opacity: 0.5;
+    .card-containers {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 25%;
+        left: 30%;
+        right: 5%;
+        width: 400px;
     }
 
-    .content-box {
-        position: absolute;
-        top: 44%;
-        left: 0%;
-        margin: auto;
+}
 
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+
+    .card-containers {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 25%;
+        left: 20%;
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+
+    .card-containers {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 25%;
+        left: 6%;
+        width: 360px;
     }
 
 }
@@ -114,19 +147,23 @@ button:hover {
     padding: 10px 50px;
     align-items: center;
 }
-.card{
+
+.card {
     height: 100%;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-    .card{
+    .card {
         height: 100%;
     }
-    .Ourproducts, .card-text h3 {
+
+    .Ourproducts,
+    .card-text h3 {
         font-size: small;
     }
 
-    .Ourproducts, .text {
+    .Ourproducts,
+    .text {
         flex-direction: column;
         gap: 0px;
     }
@@ -217,6 +254,10 @@ li a:hover {
     .img2 {
         display: flex;
         flex-direction: column;
+    }
+    .headnav1{
+        flex-direction: column;
+        align-items: center;
     }
 
 }
