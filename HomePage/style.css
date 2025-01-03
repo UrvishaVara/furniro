@@ -114,6 +114,23 @@ button:hover {
     padding: 10px 50px;
     align-items: center;
 }
+.card{
+    height: 100%;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .card{
+        height: 100%;
+    }
+    .Ourproducts, .card-text h3 {
+        font-size: small;
+    }
+
+    .Ourproducts, .text {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
 
 
 .test {
@@ -171,35 +188,13 @@ li a:hover {
     color: #3a3939;
 }
 
-/* --shopsection-- */
-
-.headimg {
-    position: relative;
-}
-
-.shoptext {
-    position: absolute;
-    top: 27%;
-    left: 45%;
-}
-
-/* --shopsection MediaQuery -- */
-
-@media only screen and (max-width: 768px) and (min-width: 200px){
-    .shoptext {
-        /* position: absolute; */
-        top: 12%;
-        left: 40%;
-    }
-}
-
-
 /* --pagination-- */
 
-.page-link{
+.page-link {
     border: none;
 }
-.lastfooter{
+
+.lastfooter {
     background: #FAF3EA;
 }
 
@@ -207,17 +202,19 @@ li a:hover {
 
 
 @media only screen and (max-width: 768px) and (min-width: 200px) {
-    .mid{
+    .mid {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-    .mid_text{
+
+    .mid_text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .img2{
+
+    .img2 {
         display: flex;
         flex-direction: column;
     }
@@ -226,20 +223,23 @@ li a:hover {
 
 /* --cartsection-- */
 
-.cart1 , .cardtotal{
+.cart1,
+.cardtotal {
     background: #F9F1E7;
 }
 
 /* --cartsection MediaQuery-- */
 
-@media only screen and (max-width: 768px) and (min-width: 200px){
+@media only screen and (max-width: 768px) and (min-width: 200px) {
 
-    .cart1, .cart2{
+    .cart1,
+    .cart2 {
         flex-direction: column;
         align-items: center;
     }
-    .cartmid{
+
+    .cartmid {
         flex-direction: column;
     }
-    
+
 }
