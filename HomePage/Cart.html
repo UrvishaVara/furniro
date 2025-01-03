@@ -28,7 +28,7 @@
                 </button>
                 <!-- navlink -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto gap-5">
+                    <ul class="navbar-nav mx-auto gap-md-5 mt-2">
                         <li class="nav-item">
                             <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
                         </li>
@@ -64,7 +64,7 @@
         </nav>
         <!-- --headerimg-- -->
         <div class="card rounded-0 border-0">
-            <img src="../Images/Rectangle 1.png" class="card-img rounded-0 border-0" alt="...">
+            <img src="../Images/Rectangle 1.png" class="card-img rounded-0 border-0 w-100" alt="...">
             <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
                 <h2 class="card-title text-center fw-bold">Cart</h2>
                 <p class="card-text text-center">Home > Cart</p>
@@ -73,26 +73,30 @@
         <!-- --headerbottom-- -->
         <div class="d-flex justify-content-center m-5">
             <div class="cartmid d-flex gap-5">
-                <div class="d-flex flex-column gap-5">
-                    <div class="cart1 fw-bold d-flex justify-content-between gap-4 p-3">
-                        <p>Product</p>
-                        <p>Price</p>
-                        <p>Quantity</p>
-                        <p>Subtotal</p>
-                    </div>
-                    <div class="cart2 d-flex fw-bold d-flex justify-content-center gap-4 p-3">
-                        <div>
-                            <img src="../Images/Mask group (1).png" alt="">
-                        </div>
-                        <p>Asgaard sofa</p>
-                        <p class="text-muted">Rs. 250,000.00</p>
-                        <div>
-                            <button type="submit" class="btn btn-light text-dark border-dark">1</button>
-                        </div>
-                        <p>Rs. 250,000.00</p>
-                        <a href="" style="color: #B88E2F;"><i class="fa-solid fa-trash"></i></a>
-                    </div>
-                </div>
+                <div class="container mt-3">          
+                    <table class="table overflow-scroll">
+                      <thead class="cart1">
+                        <tr>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Subtotal</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="../Images/Mask group (1).png" alt=""></td>
+                          <td>Asgaard sofa</td>
+                          <td><button type="submit" class="btn btn-light text-dark border-dark">1</button></td>
+                          <td>Rs. 250,000.00</td>
+                          <td><a href="" style="color: #B88E2F;"><i class="fa-solid fa-trash"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- --cardtotal-- -->
+
                 <div class="cardtotal">
                     <div class="d-flex flex-column justify-content-center align-items-center m-5">
                         <h3 class="fw-bold">Cart Totals</h3>
